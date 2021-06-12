@@ -4,8 +4,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-#git config --global user.name "CI"
-#git config --global user.email "ci@ci.com"
+git config --global user.name "CI"
+git config --global user.email "ci@ci.com"
 
 battenberg_output=$(./battenberg-install-template.sh 2>&1 || true)
 
